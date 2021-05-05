@@ -4,9 +4,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "emulators": "firebase emulators:start",
+    "deploy": "firebase deploy",
+    "deploy:hosting": "firebase deploy --only hosting"
   },
   "dependencies": {
+    "firebase": "^8.5.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
@@ -16,6 +20,7 @@
     "@vue/compiler-sfc": "^3.0.5",
     "eslint": "^7.25.0",
     "eslint-plugin-vue": "^7.9.0",
+    "firebase-tools": "^9.10.1",
     "prettier": "^2.2.1",
     "pug": "^3.0.2",
     "stylelint": "^13.13.1",
